@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-family: "Work Sans", serif; */
+.navigation-with-banner {
+  background-color: #fff4e7;
+}
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.header-title {
+  font-family: "Work Sans", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-title {
+  display: flex;
+  gap: 15px;
+}
+.nav-title li {
+  list-style: none;
+}
+.nav-title li a {
+  text-decoration: none;
+  font-family: "Work Sans", serif;
+  font-size: 18px;
+  padding: 0.7rem;
+  color: #424242;
+  line-height: 26px;
+}
+.nav-title li a:hover {
+  background-color: aquamarine;
+  border-radius: 8px;
+}
+/* responsive nav section  */
+@media screen and (max-width: 576px) {
+  .header-section,
+  .nav-title {
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .header-title {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .nav-title li a {
+    font-size: 14px;
+    padding: 0.4rem;
+    color: #424242;
+    line-height: 0px;
+  }
+}
